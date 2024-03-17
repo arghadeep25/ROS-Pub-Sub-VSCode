@@ -1,0 +1,7 @@
+{
+    "ros.distro": "noetic",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/arghadeep/codes/ros_packages/pub_sub/catkin_ws/src"
+}

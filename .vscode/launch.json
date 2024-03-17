@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "VS_Talker_Node",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/../../devel/lib/pub_sub_test/pub",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/../../",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "VS_Listener_Node",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/../../devel/lib/pub_sub_test/sub",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/../../",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

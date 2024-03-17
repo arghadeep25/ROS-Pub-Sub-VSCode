@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ROS: Build Project",
+            "type": "catkin_make",
+            "args": [
+                "--directory",
+                "~codes/ros_packages/pub_sub/catkin_ws",
+                "--pkg",
+                "pub_sub_test",
+                "-j4",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+            ],
+            "problemMatcher": "$catkin-gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
