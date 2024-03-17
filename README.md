@@ -1,5 +1,7 @@
 ## ROS Publisher Subscriber with VS Code
 
+The settings for using the ROS code are added in the `.vscode` folder. To add more features, please update the files in the `.vscode` folder.
+
 ### Install ROS
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -18,11 +20,18 @@ rosdep update
 - ROS
 - C++
 
-### Usage
+### Build
 ```
 mkdir ros_packages && cd ros_packages
+mkdir pub_sub && cd pub_sub
 mkdir catkin_ws && cd catkin_ws
 git clone git@github.com:arghadeep25/ROS-Pub-Sub-VSCode.git
-mv ROS-Pub-Sub-VSCode/* .
+mv ROS-Pub-Sub-VSCode/* . && rm -rf ROS-Pub-Sub-VSCode/
 catkin_make
 ```
+
+### Usage
+Run the following commands in different terminals separately
+- `roscore`
+- `rosrun pub_sub_test pub`
+- `rosrun pub_sub_test sub`
