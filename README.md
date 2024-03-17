@@ -15,6 +15,7 @@ sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
 ```
+For further details, visit [ROS Official Website](http://wiki.ros.org/ROS/Installation)
 
 ### Dependencies
 - ROS
